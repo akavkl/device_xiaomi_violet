@@ -549,4 +549,8 @@
 
     <!-- Regex of wired ethernet ifaces -->
     <string name="config_ethernet_iface_regex">eth0</string>
+
+    <!-- If this is true, device supports Sustained Performance Mode. -->
+    <bool name="config_sustainedPerformanceModeSupported">true</bool>
+
 </resources>
