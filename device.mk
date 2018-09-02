@@ -402,10 +402,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service
 
-# VNDK-SP
-PRODUCT_PACKAGES += \
-    vndk_package
-
 # VNDK
 EXTRA_VENDOR_LIBRARIES_64 := \
     libaudioclient \
