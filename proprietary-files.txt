@@ -929,45 +929,13 @@ vendor/lib64/libvpphvx.so
 vendor/lib64/libvpptestutils.so
 vendor/lib64/vendor.qti.hardware.vpp@1.1.so
 
-# Media - hardware
-vendor/lib/libarbitrarybytes.so
-vendor/lib/libc2dcolorconvert.so
-vendor/lib/libmm-omxcore.so
-vendor/lib/libOmxAacEnc.so
-vendor/lib/libOmxAmrEnc.so
-vendor/lib/libOmxCore.so
-vendor/lib/libOmxEvrcEnc.so
-vendor/lib/libOmxG711Enc.so
-vendor/lib/libOmxQcelp13Enc.so
-vendor/lib/libOmxSwVdec.so
-vendor/lib/libOmxSwVencMpeg4.so
-vendor/lib/libOmxVdec.so
-vendor/lib/libOmxVenc.so
-vendor/lib/libplatformconfig.so
-vendor/lib/libstagefrighthw.so
-vendor/lib64/libarbitrarybytes.so
-vendor/lib64/libc2dcolorconvert.so
-vendor/lib64/libmm-omxcore.so
-vendor/lib64/libOmxAacEnc.so
-vendor/lib64/libOmxAmrEnc.so
-vendor/lib64/libOmxCore.so
-vendor/lib64/libOmxEvrcEnc.so
-vendor/lib64/libOmxG711Enc.so
-vendor/lib64/libOmxQcelp13Enc.so
-vendor/lib64/libOmxSwVdec.so
-vendor/lib64/libOmxSwVencMpeg4.so
-vendor/lib64/libOmxVdec.so
-vendor/lib64/libOmxVenc.so
-vendor/lib64/libstagefrighthw.so
-vendor/lib64/libplatformconfig.so
-
-# Mlipay
-vendor/bin/mlipayd@1.1
-vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc
-vendor/lib64/libmlipay@1.1.so
-vendor/lib64/libmlipay.so
-vendor/lib64/vendor.xiaomi.hardware.mlipay@1.0.so
-vendor/lib64/vendor.xiaomi.hardware.mlipay@1.1.so
+# Mlipay - from Redmi K20 davinci-user 9 PKQ1.190302.001 V10.3.6.0.PFJCNXM release-keys
+vendor/bin/mlipayd@1.1|0167e5ee1eae0929ba6a1488fbfad4b655212496
+vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc|b5ab5bcd031fe4d9781b5911c0595eaeac8b80ea
+vendor/lib64/libmlipay@1.1.so|9ed1a753a3ecbe603e37b056513239392776a8ed
+vendor/lib64/libmlipay.so|e2d3bc866ced01ca64b5cc01e26db1c2a857bfdc
+vendor/lib64/vendor.xiaomi.hardware.mlipay@1.0.so|bcd74afe1002827f017eda1ed3c5412874711a6e
+vendor/lib64/vendor.xiaomi.hardware.mlipay@1.1.so|8f25b37df26cab5c11b3b32faaee3903628aed88
 
 # Neural-networks
 vendor/bin/hw/android.hardware.neuralnetworks@1.1-service-qti
