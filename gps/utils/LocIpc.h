@@ -27,8 +27,8 @@
  *
  */
 
-#ifndef __LOC_SOCKET__
-#define __LOC_SOCKET__
+#ifndef __LOC_IPC__
+#define __LOC_IPC__
 
 #include <string>
 #include <memory>
@@ -37,6 +37,8 @@
 #include <sys/un.h>
 #include <LocThread.h>
 
+using std::string;
+
 namespace loc_util {
 
 class LocIpcSender;
@@ -44,7 +46,7 @@ class LocIpcSender;
 class LocIpc {
 friend LocIpcSender;
 public:
-    inline LocIpc() : mIpcFd(-1), mStopRequested(false), mRunnable(nullptr) {}
+    inline LocIpc() : mIpcFd(-1) {}
     inline virtual ~LocIpc() { stopListening(); }
 
     // Listen for new messages in current thread. Calling this funciton will
@@ -95,7 +97,7 @@ private:
     int mIpcFd;
     bool mStopRequested;
     LocThread mThread;
-    LocRunnable *mRunnable;
+    string mIpcName;
 };
 
 class LocIpcSender {
@@ -150,4 +152,4 @@ private:
 
 }
 
-#endif //__LOC_SOCKET__
+#endif //__LOC_IPC__
