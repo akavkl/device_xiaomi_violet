@@ -12,8 +12,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from violet device
 $(call inherit-product, device/xiaomi/violet/device.mk)
 
+<<<<<<< HEAD:candy_violet.mk
 # Inherit some common Mokee stuff.
 $(call inherit-product, vendor/candy/config/common_full_phone.mk)
+=======
+# Inherit some common PixelExperience stuff.
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_GAPPS_ARCH := arm64
+TARGET_INCLUDE_STOCK_ARCORE := true
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+>>>>>>> 97b8a5d... violet: Include arcore:aosp_violet.mk
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := candy_violet
