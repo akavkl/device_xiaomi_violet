@@ -13,11 +13,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Inherit from violet device
 $(call inherit-product, device/xiaomi/violet/device.mk)
 
-# Inherit some common Potato stuff.
-$(call inherit-product, vendor/potato/config/common_full_phone.mk)
+# Inherit some common candy stuff.
+$(call inherit-product, vendor/candy/config/common_full_phone.mk)
+$(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := potato_violet
+PRODUCT_NAME := candy_violet
 PRODUCT_DEVICE := violet
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 7 Pro
@@ -30,4 +31,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="violet" \
     PRIVATE_BUILD_DESC="violet-user 9 PKQ1.181203.001 V10.3.9.0.PFHINXM release-keys"
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.build.fingerprint="google/crosshatch/crosshatch:10/QQ2A.200405.005/6254899:user/release-keys"
+
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+

@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/potato_violet.mk
+    $(LOCAL_DIR)/candy_violet.mk
