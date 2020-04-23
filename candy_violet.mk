@@ -17,6 +17,9 @@ $(call inherit-product, device/xiaomi/violet/device.mk)
 $(call inherit-product, vendor/candy/config/common_full_phone.mk)
 $(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
 
+#Include MiuiCamera
+$(call inherit-product-if-exists, vendor/MiuiCamera/config.mk)
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := candy_violet
 PRODUCT_DEVICE := violet
@@ -32,7 +35,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="violet-user 9 PKQ1.181203.001 V10.3.9.0.PFHINXM release-keys"
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.fingerprint="google/crosshatch/crosshatch:10/QQ2A.200405.005/6254899:user/release-keys"
+    ro.build.fingerprint=google/crosshatch/crosshatch:10/QQ2A.200405.005/6254899:user/release-keys
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
