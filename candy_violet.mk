@@ -17,6 +17,9 @@ $(call inherit-product, device/xiaomi/violet/device.mk)
 $(call inherit-product, vendor/candy/config/common_full_phone.mk)
 $(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
 
+#Include MiuiCamera
+$(call inherit-product-if-exists, vendor/MiuiCamera/config.mk)
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := candy_violet
 PRODUCT_DEVICE := violet

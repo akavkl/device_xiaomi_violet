@@ -7,6 +7,11 @@
     "repository":  "SecretIngredients/vendor_xiaomi_violet",
     "target_path": "vendor/xiaomi/violet",
     "branch":      "c10"
+  },
+{
+    "repository":  "SecretIngredients/vendor_MiuiCamera",
+    "target_path": "vendor/MiuiCamera",
+    "branch":      "c10"
   }
 ]
 
