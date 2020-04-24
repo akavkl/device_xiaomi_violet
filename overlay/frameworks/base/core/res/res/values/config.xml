@@ -542,4 +542,14 @@
     <bool name="config_proximityCheckOnWake">true</bool>
     <integer name="config_proximityCheckTimeout">100</integer>
     <bool name="config_proximityCheckOnWakeEnabledByDefault">true</bool>
+
+    <!-- Enable doze by default -->
+    <bool name="config_doze_enabled_by_default">true</bool>    
+
+    <!-- Doze: should the TYPE_TILT_GESTURE sensor be used as a pulse signal. -->
+    <bool name="config_dozePulseTilt">true</bool>
+
+    <!-- Doze: should the TYPE_PROXIMITY sensor be used as a pulse signal. -->
+    <bool name="config_dozePulseProximity">true</bool>
+
 </resources>
