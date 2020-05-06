@@ -9,8 +9,8 @@
     "branch":      "c10"
   },
 {
-    "repository":  "SecretIngredients/vendor_MiuiCamera",
-    "target_path": "vendor/MiuiCamera",
+    "repository":  "SecretIngredients/vendor_ANXCamera",
+    "target_path": "vendor/ANXCamera",
     "branch":      "c10"
   }
 ]
