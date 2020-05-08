@@ -27,15 +27,9 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 7 Pro
 PRODUCT_MANUFACTURER := Xiaomi
 
-BUILD_FINGERPRINT := "xiaomi/violet/violet:9/PKQ1.181203.001/V10.3.9.0.PFHINXM:user/release-keys"
-
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="violet" \
-    TARGET_DEVICE="violet" \
-    PRIVATE_BUILD_DESC="violet-user 9 PKQ1.181203.001 V10.3.9.0.PFHINXM release-keys"
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.fingerprint=google/crosshatch/crosshatch:10/QQ2A.200405.005/6254899:user/release-keys
+    TARGET_DEVICE="violet"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
