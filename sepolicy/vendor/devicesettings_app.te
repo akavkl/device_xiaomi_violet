@@ -1,0 +1,13 @@
+type devicesettings_app, domain;
+
+app_domain(devicesettings_app)
+
+# Allow devicesettings_app read and write /data/data subdirectory
+allow devicesettings_app system_app_data_file:dir create_dir_perms;
+allow devicesettings_app system_app_data_file:{ file lnk_file } create_file_perms;
+
+# Allow devicesettings_app to read and write to cgroup/{hall,motor}_device/sysfs_graphics/sysfs_leds/sysfs_thermal
+allow devicesettings_app {
+  cgroup
+  sysfs_thermal
+}:file rw_file_perms;
