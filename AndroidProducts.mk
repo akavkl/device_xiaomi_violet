@@ -5,9 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_violet.mk
-
-COMMON_LUNCH_CHOICES := \
-    arrow_violet-user \
-    arrow_violet-userdebug \
-    arrow_violet-eng
+    $(LOCAL_DIR)/candy_violet.mk
