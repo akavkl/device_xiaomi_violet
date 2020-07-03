@@ -174,7 +174,8 @@ PRODUCT_PACKAGES += \
 # Device-specific settings
 PRODUCT_PACKAGES += \
     XiaomiParts \
-    VioletParts
+    VioletParts \
+    XiaomiDoze
 
 # Display/Graphics
 PRODUCT_PACKAGES += \
