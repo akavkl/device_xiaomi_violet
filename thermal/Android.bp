@@ -1,13 +1,13 @@
 cc_binary {
-  name: "android.hardware.thermal@2.0-service.davinci",
+  name: "android.hardware.thermal@2.0-service.violet",
   defaults: [
     "hidl_defaults",
   ],
   vendor: true,
   relative_install_path: "hw",
-  vintf_fragments: ["android.hardware.thermal@2.0-service.davinci.xml"],
+  vintf_fragments: ["android.hardware.thermal@2.0-service.violet.xml"],
   init_rc: [
-    "android.hardware.thermal@2.0-service.davinci.rc",
+    "android.hardware.thermal@2.0-service.violet.rc",
   ],
   srcs: [
     "service.cpp",

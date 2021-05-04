@@ -169,7 +169,7 @@ PRODUCT_PACKAGES += \
     disable_configstore
 
 # Dex
-PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := everything
+#PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := everything
 
 # Device-specific settings
 PRODUCT_PACKAGES += \
